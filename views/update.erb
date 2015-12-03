@@ -1,0 +1,12 @@
+<h3>Update Item</h3>
+
+<p>
+  <em>Update item #<%= @items.id %>.</em>
+</p>
+
+<form action="/update" method="post">
+  <input type="hidden" name="id" value="<%= @items.id %>">
+  <input type="text" name="name" value="<%= @items.name %>">
+  <input type="text" name="quantity" value="<%= @items.quantity %>">
+  <input type="submit">Update Item</input>
+</form>

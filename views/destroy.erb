@@ -1,0 +1,11 @@
+<h3>Destroy Task</h3>
+
+<p>
+  Are you sure you want to erase Item # <%= @items.id %>?
+  You only want to remove <em><%= @items.name %></em> from the list if you are sure you do not need it!
+</p>
+
+<form action="/destroy" method="post">
+  <input type="hidden" name="id" value="<%= @items.id %>">
+  <input type="submit" value="Destroy Item">
+</form>
