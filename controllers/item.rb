@@ -3,7 +3,7 @@ class ItemsController < ApplicationController
   #read (list)
   get '/' do
     @items = Item.all
-    erb :read
+    erb :list
   end
 
   #create

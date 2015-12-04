@@ -1,0 +1,17 @@
+  <h2>Shopping List</h2>
+
+  <% if @message %>
+  <li><%= @message%></li>
+  <% end %>
+  <form class="" action="/account/login" method="post">
+    <input type="text" name="user_name" placeholder="Username">
+    <br>
+    <br>
+    <input type="password" name="password" placeholder="Password">
+    <br>
+    <br>
+    <input type="submit" name="submit" value="Submit">
+  </form>
+    <p>
+      <a href="/account/register">New User Registration</a>
+    </p>
