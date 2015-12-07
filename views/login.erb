@@ -1,17 +1,25 @@
-  <h2>Shopping List</h2>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h3 class="login_name">Login</h3>
 
   <% if @message %>
   <li><%= @message%></li>
   <% end %>
-  <form class="" action="/account/login" method="post">
-    <input type="text" name="user_name" placeholder="Username">
+  <form id="login" action="/account/login" method="post">
+    <input type="text" class="create" name="user_name" placeholder="Username">
     <br>
     <br>
-    <input type="password" name="password" placeholder="Password">
+    <input type="password" class="create" name="password" placeholder="Password">
     <br>
     <br>
-    <input type="submit" name="submit" value="Submit">
+    <input class="modify" type="submit" name="submit" value="Submit">
   </form>
     <p>
-      <a href="/account/register">New User Registration</a>
+      <small><a class="new_user" href="/account/register">New User Registration</a><small>
     </p>
+    <br>
+    <br>
+    <br>
+    <br>

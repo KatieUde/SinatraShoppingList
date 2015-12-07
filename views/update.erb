@@ -1,12 +1,23 @@
-<h3>Update Item</h3>
+<br>
+<br>
+<br>
 
-<p>
-  <em>Update item #<%= @items.id %>.</em>
-</p>
+<div id="update_item">
+  <h3>Update Item</h3>
 
-<form action="/update" method="post">
-  <input type="hidden" name="id" value="<%= @items.id %>">
-  <input type="text" name="name" value="<%= @items.name %>">
-  <input type="text" name="quantity" value="<%= @items.quantity %>">
-  <input type="submit">Update Item</input>
-</form>
+  <p>
+    <em>Update item #<%= @items.id %>.</em>
+  </p>
+
+  <form action="/update" method="post">
+    <input type="hidden" name="id" value="<%= @items.id %>">
+    <input type="text" name="name" value="<%= @items.name %>">
+    <input type="text" name="quantity" value="<%= @items.quantity %>">
+    <small><input class="modify" type="submit">Update Item</input><small>
+  </form>
+</div>
+
+<br>
+<br>
+<br>
+<br>

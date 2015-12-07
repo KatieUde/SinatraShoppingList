@@ -3,15 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>Sinatra Shopping List</title>
+    <link rel="stylesheet" href="/style.css" media="screen" title="no title" charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Cabin:400,400italic,500,500italic,600,600italic' rel='stylesheet' type='text/css'>
   </head>
+  <div id="logo">
+    <header>
+      <h1 id="app_title">Listr</h1>
+      <img src="http://i.imgur.com/syUNOTu.jpg" alt="" />
+    </header>
+  </div>
   <body>
-    <h1>My Shopping List</h1>
-    <em>Note to self: stop at Sbucks on the way home!</em>
-    <hr>
+    <hr width="92%">
 
     <%= yield %>
 
-    <hr>
+    <hr width="92%">
+    <small><footer>
     &copy 2015
+  </footer><small>
   </body>
 </html>

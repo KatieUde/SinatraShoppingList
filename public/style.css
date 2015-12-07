@@ -1,0 +1,92 @@
+body {
+  background: rgb(122, 164, 219);
+  /*background: rgb(81, 111, 214);*/
+  font-family: 'Cabin', sans-serif;
+}
+
+#app_title {
+  text-align: right;
+  margin-right: 30px;
+}
+
+.table_head {
+  padding-left: 40px;
+  text-align: left;
+}
+
+.table_body {
+  padding-left: 40px;
+  padding-bottom: 10px;
+}
+
+.underline {
+  text-decoration: none;
+}
+
+.modify {
+  background: rgb(180, 183, 207);
+  border-radius: 35px;
+  text-decoration: none;
+}
+
+img {
+  height: 10%;
+  width: 10%;
+  float: left;
+  float: left;
+}
+
+#destroy {
+  text-align: center;
+}
+
+#logo h1 {
+  display: inline-block;
+}
+
+#logo {
+  text-align: right;
+  margin-bottom: 70px;
+}
+
+#message {
+  text-align: center;
+}
+
+#welcome_back {
+  text-align: center;
+}
+
+#new_item {
+  text-align: center;
+}
+
+.new_user {
+  margin-left: 50px;
+}
+
+#login {
+  margin-left: 50px;
+}
+
+#create_button {
+  margin-left: 30px;
+}
+
+#update_item {
+  margin-left: 50px;
+}
+
+.login_name {
+  margin-left: 50px;
+}
+
+.create {
+  border-radius: 35px;
+  line-height: 20px;
+}
+
+footer {
+  bottom: 0px;
+  position: fixed;
+}

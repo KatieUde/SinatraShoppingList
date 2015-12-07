@@ -1,26 +1,27 @@
-<h3>Item List</h3>
+<h3>Shopping List</h3>
 
 <% if @message %>
   <strong><%= @message %></strong>
 <% end %>
+<br>
+<br>
 
-<li><a href='/create'>Create Item</a></li>
 
 <table>
   <thead>
-    <th>
+    <th class="table_head">
       Id
     </th>
-    <th>
+    <th class="table_head">
       Name
     </th>
-    <th>
+    <th class="table_head">
       Quantity
     </th>
-    <th>
+    <th class="table_head">
       Update?
     </th>
-    <th>
+    <th class="table_head">
       Destroy?
     </th>
   </thead>
@@ -28,22 +29,28 @@
   <tbody>
     <% @items.each do |item| %>
       <tr>
-        <td>
+        <td class="table_body">
           <%= item.id %>
         </td>
-        <td>
+        <td class="table_body">
           <%= item.name %>
         </td>
-        <td>
+        <td class="table_body">
           <%= item.quantity %>
         </td>
-        <td>
-          <a href='/update/<%= item.id %>'>Update</a>
+        <td class="table_body">
+          <button class="modify"><a class="underline" href='/update/<%= item.id %>'>Update</a></button>
         </td>
-        <td>
-          <a href='/destroy/<%= item.id %>'>Destroy</a>
+        <td class="table_body">
+          <button class="modify"><a class="underline" href='/destroy/<%= item.id %>'>Destroy</a></button>
         </td>
       </tr>
     <% end %>
   </tbody>
 </table>
+
+<button type="button" id="create_button" class="modify" name="button"><a class="underline" href='/create'>Create Item</a></button>
+
+<br>
+<br>
+<br>
